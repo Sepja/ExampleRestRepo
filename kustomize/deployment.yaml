@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: examplerepo
+  labels:
+    app: examplerepo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: examplerepo
+  template:
+    metadata:
+      labels:
+        app: examplerepo
+    spec:
+      containers:
+        - name: examplerepo
+          image: terrenceskill/examplerepo
+          ports:
+            - containerPort: 3000
