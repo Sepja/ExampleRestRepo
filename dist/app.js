@@ -7,9 +7,10 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello World! ');
 });
 app.listen(port, () => {
-    return console.log(`Express is listening at http://localhost:${port}`);
+    return console.log(`Express is listening at http://localhost:${port} `);
 });
+console.log("Ich bin aktiv");
 //# sourceMappingURL=app.js.map
