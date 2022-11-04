@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: examplerepo
-          image: terrenceskill/examplerepo:0892017eff8762b86b53394d1fec42e7063e1d25
+          image: terrenceskill/examplerepo:8fbebb14343dadf71862d939e406a9399a1d1a8e
           ports:
             - containerPort: 3000
