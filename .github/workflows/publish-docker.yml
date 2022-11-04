@@ -40,8 +40,8 @@ jobs:
       - name: Update value in yaml file
         uses: fjogeleit/yaml-update-action@main
         with:
-          valueFile: 'kustomize/test.yaml'
-          propertyPath: 'backend.version'
+          valueFile: 'kustomize/deployment.yaml'
+          propertyPath: 'spec.template.spec.containers.image'
           value: ${{ steps.meta.outputs.tags }}
           branch: 'main'
           message: 'Update Image Version to ${{ steps.meta.outputs.tags }}'
