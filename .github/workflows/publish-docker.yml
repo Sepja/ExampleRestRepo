@@ -44,4 +44,4 @@ jobs:
           propertyPath: 'backend.version'
           value: ${{ steps.meta.outputs.tags }}
           branch: 'main'
-          message: 'Update Image Version to ' ${{ steps.meta.outputs.tags }}
+          message: 'Update Image Version to ${{ steps.meta.outputs.tags }}'
