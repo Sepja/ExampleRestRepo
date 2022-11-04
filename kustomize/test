@@ -1,0 +1,6 @@
+flux bootstrap github \
+  --owner=Sepja \
+  --repository=Sepja/exampleFluxcd \
+  --branch=main \
+  --path=./clusters/fluxcd \
+  --personal

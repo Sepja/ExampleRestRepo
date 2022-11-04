@@ -28,3 +28,11 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_NAME }}/examplerepo:latest
+      - name: Update value in yaml file
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'kustomize/test.yaml'
+          propertyPath: 'backend.version'
+          value: 20
+          branch: 'main'
+          message: 'Update Image Version to 20'
